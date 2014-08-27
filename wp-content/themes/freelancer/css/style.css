@@ -1,0 +1,111 @@
+/*.carousel{padding: 100px 0 0 0; position: relative;}*/
+
+#head-top{
+position: relative;
+padding-top: 0px;
+padding-bottom: 0px;
+margin-top: -60px;
+display: inline-block;
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+
+
+
+.logo{position: relative;float: left; display: block; width: 256px; height: 236px; margin: -60px auto;}
+.section-cor{ width: 100%; left: 0;top: 0;bottom: 0;}
+.section-header{position: relative;
+border-bottom: 0;
+padding-bottom: 0;
+margin: 10px auto 60px;
+font-size: 18px;
+}
+.logo-center{margin: 0 auto;}
+
+.navbar-default{background: white;}
+.navbar-default .navbar-nav>li>a{color: #0092bc;}
+
+@media (min-width:1024px) { 
+	.navbar > .container {
+	    text-align: center;
+	}
+	.navbar-header,.navbar-brand,.navbar .navbar-nav,.navbar .navbar-nav > li {
+	    float: none;
+	    display: inline-block;
+	}
+	.collapse.navbar-collapse {
+	    float: none;
+	    display: inline-block!important;
+	    width: auto;
+	    clear: none;
+	}
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+background-color: #2C3E50;}
+
+.navbar-toggle{background:#2c3e50; }
+navbar-default .navbar-toggle .icon-bar{background-color: white}
+
+/* Home Page Carousel */
+
+/*div.carousel {
+    height: 66%;
+}
+
+div.carousel .item,
+div.carousel .item.active,
+div.carousel .carousel-inner {
+    height: 100%;
+}
+
+div.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}*/
+
+.text{text-indent: -999;}
+.large{font-family: sans-serif; font-size: 20px;}
+.center{text-align: center}
+
+
+
+/*full width container*/
+/*@media (max-width: 767px) {
+    .block {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}*/
+
+.section-carousel{}
+.section-carousel {
+    text-align: center;
+    color: #fff;
+    background: #13a2ea;
+    width: 100%;
+}
+
+.section-carousel .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.section-carousel img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+
+
+@media(min-width:768px) {
+    .section-carousel .container {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+}
+
+.sombra{background:url('/treino/img/bg-sombra.png') no-repeat; width: 980px; height: 370px;margin:  10px auto;}

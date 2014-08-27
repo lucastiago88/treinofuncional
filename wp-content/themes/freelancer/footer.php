@@ -42,84 +42,21 @@
         </a>
     </div>
 
-   
     
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">         
-          <div class="modal-body"> 
-            <div style="height:25px;clear:both;display:block;">
-                <a class="controls next" href="2">next »</a>
-                <a class="controls previous" href="0" style="display: none;">« prev</a>
-            </div>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-    
-    <script>
-    $(document).ready(function(){
-           $('a img').on('click',function(){
-                var src = $(this).attr('src');
-                var img = '<img src="' + src + '" class="img-responsive"/>';
-                $('#myModal').modal();
-                $('#myModal').on('shown.bs.modal', function(){
-                    $('#myModal .modal-body').html(img);
-                });
-                $('#myModal').on('hidden.bs.modal', function(){
-                    $('#myModal .modal-body').html('');
-                });
-           });  
-        })
-     //new code
-        $(document).on('click', 'a.controls', function(){
-            var index = $(this).attr('href');
-            var src = $('ul.row li:nth-child('+ index +') img').attr('src');             
-            
-            $('.modal-body img').attr('src', src);
-            
-            var newPrevIndex = parseInt(index) - 1; 
-            var newNextIndex = parseInt(newPrevIndex) + 2; 
-            
-            if($(this).hasClass('previous')){               
-                $(this).attr('href', newPrevIndex); 
-                $('a.next').attr('href', newNextIndex);
-            }else{
-                $(this).attr('href', newNextIndex); 
-                $('a.previous').attr('href', newPrevIndex);
-            }
-            
-            var total = $('ul.row li').length + 1; 
-            //hide next button
-            if(total === newNextIndex){
-                $('a.next').hide();
-            }else{
-                $('a.next').show()
-            }            
-            //hide previous button
-            if(newPrevIndex === 0){
-                $('a.previous').hide();
-            }else{
-                $('a.previous').show()
-            }
-            
-            
-            return false;
-        });
-        
-    </script>
-  
-    <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-    <script src="<?php echo get_template_directory(); ?>/js/bootstrap-image-gallery.min.js"></script>
+    <!-- jQuery Version 1.11.0 -->
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
     <!-- Plugin JavaScript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="<?php echo get_template_directory(); ?>/js/classie.js"></script>
-    <script src="<?php echo get_template_directory(); ?>/js/cbpAnimatedHeader.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/classie.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/cbpAnimatedHeader.js"></script>
     <!-- Contact Form JavaScript -->
-    <script src="<?php echo get_template_directory(); ?>/js/jqBootstrapValidation.js"></script>
-    <script src="<?php echo get_template_directory(); ?>/js/contact_me.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jqBootstrapValidation.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/contact_me.js"></script>
     <!-- Custom Theme JavaScript -->
-    <script src="<?php echo get_template_directory(); ?>/js/freelancer.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/freelancer.js"></script>
 
 <?php wp_footer(); ?>
 
