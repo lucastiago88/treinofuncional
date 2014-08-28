@@ -57,6 +57,25 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/contact_me.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="<?php echo get_template_directory_uri(); ?>/js/freelancer.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function(){
+            jQuery('#contactForm').submit(function(){
+                var dados = jQuery( this ).serialize();
+                jQuery.ajax({
+                    type: "POST",
+                    url: "<?php echo get_template_directory_uri(); ?>/mail/contact_me.php",
+                    data: dados,
+                    success: function( data )
+                    {
+                        jQuery("#success").html(data.message);
+                        setTimeout(function(){jQuery("#success").hide('slow')}, 3000);
+                    }
+                });
+                
+                return false;
+            });
+        });
+    </script>
 
 <?php wp_footer(); ?>
 
