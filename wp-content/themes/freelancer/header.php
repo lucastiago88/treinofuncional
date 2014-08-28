@@ -10,6 +10,7 @@
     <title><?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?></title>  
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico">
     <!--<link rel="stylesheet" media="all" href="css/bootstrap-image-gallery.min.css">-->
     <!-- Custom CSS -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">

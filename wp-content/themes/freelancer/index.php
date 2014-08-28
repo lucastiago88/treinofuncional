@@ -43,28 +43,28 @@
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Nome</label>
-                                <input type="text" class="form-control" placeholder="Seu Nome" id="name" required data-validation-required-message="Digite seu Nome">
+                                <input type="text" name="name" class="form-control" placeholder="Seu Nome" id="name" required data-validation-required-message="Digite seu Nome">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Email</label>
-                                <input type="email" class="form-control" placeholder="Seu Email" id="email" required data-validation-required-message="Digite seu endereço de e-mail.">
+                                <input type="email" class="form-control" name="email"  placeholder="Seu Email" id="email" required data-validation-required-message="Digite seu endereço de e-mail.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Seu Numero</label>
-                                <input type="tel" class="form-control" placeholder="Seu numero" id="phone" required data-validation-required-message="Digite seu Telefone">
+                                <input type="tel" class="form-control" name="phone"  placeholder="Seu numero" id="phone" required data-validation-required-message="Digite seu Telefone">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Mensagem</label>
-                                <textarea rows="5" class="form-control" placeholder="Sua Mensagem" id="message" required data-validation-required-message="Digite sua Mensagem"></textarea>
+                                <textarea rows="5" class="form-control" name="message" placeholder="Sua Mensagem" id="message" required data-validation-required-message="Digite sua Mensagem"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
